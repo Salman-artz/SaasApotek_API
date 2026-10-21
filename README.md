@@ -12,7 +12,13 @@
 
 ---
 
-## 📸 Integrasi Eksternal (SatuSehat Kemenkes & AI Gemini)
+## 📸 Antarmuka & Integrasi Sistem (Auth, SatuSehat, & AI Gemini)
+
+<p align="center">
+  <img src="screenshots/login.png" alt="Autentikasi Sesi & JWT Auth" width="90%" />
+  <br/>
+  <em>Halaman Autentikasi Sesi & Multi-Role Tenant Isolation (JWT & Multi-Tenant Auth)</em>
+</p>
 
 <p align="center">
   <img src="screenshots/foto3_satusehat_kemenkes.png" alt="Integrasi SatuSehat Kemenkes" width="90%" />
