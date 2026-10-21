@@ -12,6 +12,22 @@
 
 ---
 
+## 📸 Integrasi Eksternal (SatuSehat Kemenkes & AI Gemini)
+
+<p align="center">
+  <img src="screenshots/foto3_satusehat_kemenkes.png" alt="Integrasi SatuSehat Kemenkes" width="90%" />
+  <br/>
+  <em>Sinkronisasi FHIR R4 MedicationDispense & KFA Kemenkes RI</em>
+</p>
+
+<p align="center">
+  <img src="screenshots/foto4_ai_assistant_gemini.png" alt="AI Drug Interaction Checker" width="90%" />
+  <br/>
+  <em>Clinical Drug Interaction Checker & Smart Restock Bertenaga Google Gemini</em>
+</p>
+
+---
+
 ## ✨ Fitur API
 
 - 🔐 **Authentication & RBAC** — JWT-based auth dengan role guard (owner / pharmacist / cashier)
