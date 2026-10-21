@@ -1,0 +1,48 @@
+import { Hono } from 'hono';
+import authRoutes from './auth.routes';
+import productRoutes from './products.routes';
+import suppliersRoutes from './suppliers.routes';
+import transactionRoutes from './transactions.routes';
+import dashboardRoutes from './dashboard.routes';
+import outletsRoutes from './outlets.routes';
+import usersRoutes from './users.routes';
+import inventoryRoutes from './inventory.routes';
+import purchasesRoutes from './purchases.routes';
+import reportsRoutes from './reports.routes';
+import customersRoutes from './customers.routes';
+import aiRoutes from './ai.routes';
+import expensesRoutes from './expenses.routes';
+import accountingRoutes from './accounting.routes';
+import promotionsRoutes from './promotions.routes';
+import whatsappRoutes from './whatsapp.routes';
+import defectaRoutes from './defecta.routes';
+import transfersRoutes from './transfers.routes';
+import billingRoutes from './billing.routes';
+import satusehatRoutes from './satusehat.routes';
+import remindersRoutes from './reminders.routes';
+
+const router = new Hono();
+
+router.route('/auth', authRoutes);
+router.route('/outlets', outletsRoutes);
+router.route('/users', usersRoutes);
+router.route('/products', productRoutes);
+router.route('/inventory', inventoryRoutes);
+router.route('/suppliers', suppliersRoutes);
+router.route('/purchases', purchasesRoutes);
+router.route('/transactions', transactionRoutes);
+router.route('/reports', reportsRoutes);
+router.route('/customers', customersRoutes);
+router.route('/ai', aiRoutes);
+router.route('/expenses', expensesRoutes);
+router.route('/accounting', accountingRoutes);
+router.route('/promotions', promotionsRoutes);
+router.route('/whatsapp', whatsappRoutes);
+router.route('/defecta', defectaRoutes);
+router.route('/transfers', transfersRoutes);
+router.route('/billing', billingRoutes);
+router.route('/satusehat', satusehatRoutes);
+router.route('/reminders', remindersRoutes);
+router.route('/dashboard', dashboardRoutes);
+
+export default router;
