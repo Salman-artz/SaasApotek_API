@@ -195,12 +195,12 @@ router.post('/generate-sp', async (c) => {
         tenantId,
         outletId: user.outletId || null,
         supplierId,
-        poNumber,
+        orderNumber: poNumber,
         orderType,
-        status: 'SUBMITTED',
+        status: 'SENT',
         orderDate: new Date().toISOString().split('T')[0],
         notes: notes || 'Otomatis dibuat dari Buku Defecta AI',
-        createdById: user.id,
+        createdBy: user.id,
       })
       .returning();
 

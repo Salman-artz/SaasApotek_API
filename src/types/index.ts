@@ -5,6 +5,8 @@ export type AuthUser = {
   tenantId: string;
   outletId: string | null;
   role: string;
+  fullName?: string;
+  email?: string;
 };
 
 // Extend Hono context variables

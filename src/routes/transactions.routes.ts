@@ -443,7 +443,6 @@ router.post('/', async (c) => {
             .update(productBatches)
             .set({
               stockInBaseUnit: sql`${productBatches.stockInBaseUnit} - ${totalBaseQtyNeeded}`,
-              updatedAt: new Date(),
             })
             .where(
               and(
@@ -543,7 +542,6 @@ router.post('/', async (c) => {
               .update(productBatches)
               .set({
                 stockInBaseUnit: sql`${productBatches.stockInBaseUnit} - ${deductFromThis}`,
-                updatedAt: new Date(),
               })
               .where(
                 and(
@@ -635,7 +633,7 @@ router.post('/', async (c) => {
       data: {
         ...result,
         outlet: receiptOutlet,
-        cashierName: user.fullName,
+        cashierName: user.fullName || 'Kasir',
       },
     }, 201);
   } catch (error: any) {
