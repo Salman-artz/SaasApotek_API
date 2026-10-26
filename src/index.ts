@@ -63,9 +63,13 @@ app.onError((err, c) => {
 });
 
 const port = env.PORT || 3001;
-console.log(`🚀 Apotek Digital API Server is running on http://localhost:${port}`);
 
-serve({
-  fetch: app.fetch,
-  port,
-});
+if (!process.env.VERCEL) {
+  console.log(`🚀 Apotek Digital API Server is running on http://localhost:${port}`);
+  serve({
+    fetch: app.fetch,
+    port,
+  });
+}
+
+export default app;
