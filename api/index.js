@@ -5,7 +5,7 @@ var __export = (target, all) => {
 };
 
 // api/index.ts
-import { handle } from "hono/vercel";
+import { handle } from "@hono/node-server/vercel";
 
 // src/index.ts
 import { serve } from "@hono/node-server";
